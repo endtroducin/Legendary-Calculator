@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>title</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- Jodah / Commander -->
+<div class = "frame">
+    <p class="title">Commander.</p>
+</div>
+
+<div class ="frame">
+        <a href="#" id="jodahLess" class="btn less disabled" onclick="less(jodah, 'jodahLess', 'jodahMore')">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        
+        <p class="num" id="jodahQuantity">0</p>
+        
+        <a href="#" id="jodahMore" class="btn more" onclick="more(jodah, 'jodahLess', 'jodahMore')">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <p class="title">Jodah</p>
+    </div>
+
+    <hr>
+
+<!-- #region | Legendary Rule     --> 
+<!-- Legendary Toggle -->
+<div class = "frame">
+    <p class="title">Legendary Rule.</p>
+</div>
+
+
+<div class = "frame">
+        <a href="#" id="legendaryRule" class="btn">
+            <i class="fas fa-toggle-off" id="legendaryRuleToggle"></i>
+        </a>
+        <p class="title" id="legendaryRuleStatus">Legendary Rule is in effect.</p>
+    </div>
+
+<!-- MirrorBox -->
+    <div class ="frame">
+        <a href="#" id="mirrorBoxLess" class="btn less disabled" onclick="lessRuleArtifact(mirrorBox, 'mirrorBoxLess', 'mirrorBoxMore')">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        
+        <p class="num" id="mirrorBoxQuantity">0</p>
+        
+        <a href="#" id="mirrorBoxMore" class="btn more" onclick="moreRuleArtifact(mirrorBox, 'mirrorBoxLess')">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <p class="title">MirrorBox</p>
+    </div>
+
+<!-- Cadric     -->
+    <div class ="frame">
+        <a href="#" id="cadricLess" class="btn less disabled" onclick="lessRule(cadric, 'cadricLess', 'cadricMore')">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        
+        <p class="num" id="cadricQuantity">0</p>
+        
+        <a href="#" id="cadricMore" class="btn more" onclick="moreRule(cadric, 'cadricLess')">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <p class="title">Cadric</p>
+    </div>
+<!-- #endregion -->
+
+    <hr>
+
+<!-- #region | Special Legendaries  -->
+<div class = "frame">
+    <p class="title">Special Legendaries.</p>
+</div>
+
+
+    <div class ="frame">
+        <a href="#" id="heroesPodiumLess" class="btn less disabled" onclick="lessArtifact(heroesPodium, 'heroesPodiumLess', 'heroesPodiumMore')">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        
+        <p class="num" id="heroesPodiumQuantity">0</p>
+        
+        <a href="#" id="heroesPodiumMore" class="btn more" onclick="moreArtifact(heroesPodium, 'heroesPodiumLess', 'heroesPodiumMore')">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <p class="title">Heroes' Podium</p>
+    </div>
+
+    <div class ="frame">
+        <a href="#" id="jetmirLess" class="btn less disabled" onclick="less(jetmir, 'jetmirLess', 'jetmirMore')">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        
+        <p class="num" id="jetmirQuantity">0</p>
+        
+        <a href="#" id="jetmirMore" class="btn more" onclick="more(jetmir, 'jetmirLess', 'jetmirMore')">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <p class="title">Jetmir</p>
+    </div>
+
+<!-- #endregion  -->
+
+    <hr>
+
+<!-- #region | Generic Legendaries  -->
+<div class = "frame">
+    <p class="title">Legendary Creatures.</p>
+</div>
+
+
+<div class ="frame">
+    <a href="#" id="legendaryCreaturesLess" class="btn less disabled" onclick="lessLegendary(legendaryCreatures, 'legendaryCreaturesLess', 'legendaryCreaturesMore')">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    
+    <p class="num" id="legendaryCreaturesQuantity">0</p>
+    
+    <a href="#" id="legendaryCreaturesMore" class="btn more" onclick="moreLegendary(legendaryCreatures, 'legendaryCreaturesLess', 'legendaryCreaturesMore')">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+
+    <p class="title">Legendary Creatures</p>
+</div>
+
+<div class ="frame">
+    <a href="#" id="legendaryCreatureTokensLess" class="btn less disabled" onclick="lessLegendaryTokens(legendaryCreatureTokens, 'legendaryCreatureTokensLess', 'legendaryCreatureTokensMore')">
+        <i class="fas fa-chevron-left"></i>
+    </a>
+    
+    <p class="num" id="legendaryCreatureTokensQuantity">0</p>
+    
+    <a href="#" id="legendaryCreatureTokensMore" class="btn more disabled" onclick="moreLegendaryTokens(legendaryCreatureTokens, 'legendaryCreatureTokensLess', 'legendaryCreatureTokensMore')">
+        <i class="fas fa-chevron-right"></i>
+    </a>
+
+    <p class="title">Legendary Creature Tokens</p>
+</div>
+
+<!-- #endregion  -->
+
+    <hr>
+
+<!-- #region | Dragon Throne of Tarkir-->
+
+    <div class = "frame">
+        <p class="title">Dragon Throne equiped to Jodah.</p>
+    </div>
+
+    <div class = "frame">
+        <a href="#" id="dragonThrone" class="btn" onclick="dragonThroneToggle('dragonThroneToggle')">
+            <i class="fas fa-toggle-off" id="dragonThroneToggle"></i>
+        </a>
+        <p class="title" id="dragonThroneStatus">Dragon Throne isn't active.</p>
+    </div>
+
+<!-- #endregion-->
+
+    <hr>
+
+<!-- #region | Total -->
+
+    <div class="quantityNumber" id="totalBonus">Total Bonus: + 0 / + 0</div>
+
+<!-- #endregion -->
+
+</body>
+</html>

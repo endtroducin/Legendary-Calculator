@@ -1,0 +1,192 @@
+hr {
+  width: 320px;
+  height: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #DDD;
+}
+
+.box{
+  display: flex;
+  align-items: center;
+}
+
+.button {
+    background-color: #ccc;
+    border: 0px;
+    /* border-radius: 30px; */
+    box-shadow: #555 2px 2px 0 0;
+    color: #555;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 1000;
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0 10px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 40px;
+    text-align:center;
+    /* border-radius: 25%; */
+  }
+  
+.button:hover {
+    background-color: #aaa;
+  }
+  
+.button:active {
+    box-shadow: #555 0px 0px 0 0;
+    transform: translate(2px, 2px);
+  }
+
+/* .disabled {
+    background-color: rgba(255, 255, 255, 0) !important;
+    transform: translate(2px, 2px);
+    box-shadow: #422800 0px 0px 0 0 !important;
+
+}  */
+
+
+.quantityLess {
+    border-radius: 25% 0 0 25%;
+}
+
+.quantityMore {
+    border-radius: 0 25% 25% 0;
+}
+
+.quantityNumber {
+    /* background-color: #ccc; */
+    border: 0px;
+    color: #555;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    min-width: 40px;
+}
+
+
+
+
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: -8px;
+   background: #e0e5ec;
+}
+
+.frame{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  height: 40px;
+  width: 320px;
+  position: relative;
+   /* box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,
+   inset 0px 0px 0px 0px #0001,
+   inset 0px 0px 0px 0px #fff9,        inset 0px 0px 0px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+   border-radius: 10px; */
+}
+
+.num{
+  font-size: large;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #666;
+}
+
+.title{
+  font-size: medium;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /* width: 20px; */
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+  color: #666;
+}
+
+.btn{
+  height: 30px;
+  width: 30px;
+  /* border-radius: 4px; */
+  background: #e0e5ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+ transition:box-shadow 0.6s cubic-bezier(.79,.21,.06,.81);
+  font-size: 18px;
+  color: #666;
+  text-decoration: none;
+}
+
+.disabled {
+  box-shadow:none;
+  transition: none;
+}
+
+.less{
+  border-radius: 16px 2px 2px 16px;
+}
+
+.more{
+  border-radius: 4px 16px 16px 4px;
+}
+
+.btn:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.5),
+    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+}
+
+
+
+/* avoid pulling wrong id when clicking button */
+div > a > i {
+  pointer-events: none;
+}
+
+/* div > a {
+  border: red 1px solid;
+} */
